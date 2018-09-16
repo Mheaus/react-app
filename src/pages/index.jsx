@@ -1,12 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import { Layout } from '../components'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import NoMatch from './404'
+import Home from './Home'
 
 const App = () => (
-  <Layout className="App">
-    <p>content</p>
-  </Layout>
+  <Router>
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route component={NoMatch} />
+    </Switch>
+  </Router>
 )
 
 ReactDOM.render(<App />, document.getElementById('root'))

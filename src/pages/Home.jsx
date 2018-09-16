@@ -8,3 +8,5 @@ const App = () => (
     <p>content</p>
   </Layout>
 )
+
+export default Home

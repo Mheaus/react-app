@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import NoMatch from './404'
-import Home from './Home'
+import Home from './home'
 
 const App = () => (
   <Router>
